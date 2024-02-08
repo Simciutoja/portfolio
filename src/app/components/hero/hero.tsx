@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import Link from 'next/link'
 import Image from 'next/image'
-import { Link as ScrollLink } from 'react-scroll'
 const words: string[] = [
     'Szymon',
     'JavaScript Developer',
@@ -26,14 +26,14 @@ export default function Hero() {
                     />
                 </div>
                 <div className="h-32 w-32 mx-auto flex items-center justify-center">
-                    <ScrollLink to="about" smooth={true} duration={600}>
+                    <Link href="#">
                         <Image
                             src="/arrow-d.svg"
                             alt="Picture of the author"
                             width={30}
                             height={30}
                         />
-                    </ScrollLink>
+                    </Link>
                 </div>
             </h1>
         </div>
