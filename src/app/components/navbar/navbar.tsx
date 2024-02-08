@@ -21,7 +21,7 @@ export default function Hero() {
         "Skontaktuj się",
     ];
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll>
+        <Navbar onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll className="font-thin">
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -35,7 +35,7 @@ export default function Hero() {
                         alt="NextUI Album Cover"
                         className="mr-5"
                     />
-                    <p className="font-bold text-inherit">Simciutoja</p>
+                    <p className="font-medium text-inherit">Simciutoja</p>
                 </NavbarBrand>
             </NavbarContent>
 
