@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
-import Link from 'next/link'
 import Image from 'next/image'
+import { Link as ScrollLink } from 'react-scroll'
 const words: string[] = [
-   'Szymon',
+    'Szymon',
     'JavaScript Developer',
     'React Developer',
     'TypeScript Developer',
@@ -13,7 +13,7 @@ const words: string[] = [
 
 export default function Hero() {
     return (
-        <div className="hero text-center flex items-center justify-center h-screen mt-[-50px]">
+        <div className="hero text-center flex items-center justify-center h-screen mt-[-50px] animate__animated animate__fadeInUp">
             <h1 className="text-6xl font-bold ">
                 Cześć, jestem
                 <div className="text-white-accent">
@@ -22,18 +22,18 @@ export default function Hero() {
                         loop={true}
                         cursor={true}
                         cursorBlinking={true}
-                        cursorColor={'#'}
+                        cursorColor={'#fffff'}
                     />
                 </div>
                 <div className="h-32 w-32 mx-auto flex items-center justify-center">
-                    <Link href="#">
+                    <ScrollLink to="about" smooth={true} duration={600}>
                         <Image
                             src="/arrow-d.svg"
                             alt="Picture of the author"
                             width={30}
                             height={30}
                         />
-                    </Link>
+                    </ScrollLink>
                 </div>
             </h1>
         </div>

@@ -8,8 +8,7 @@ import {
     NavbarMenuToggle,
     NavbarMenu,
     NavbarMenuItem,
-    Link,
-    Button
+    Link
 } from "@nextui-org/react";
 import {Image} from "@nextui-org/react";
 export default function Hero() {

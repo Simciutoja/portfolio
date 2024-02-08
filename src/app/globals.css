@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   color: rgb(var(--foreground-rgb));
-  overflow: hidden;
+
 }
 
 @layer utilities {
