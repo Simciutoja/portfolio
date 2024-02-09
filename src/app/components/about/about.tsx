@@ -1,25 +1,18 @@
 'use client'
 import React from 'react'
-import Link from 'next/link'
-import {Image} from "@nextui-org/react";
-
 
 export default function about() {
     return (
-        <div className="about" id="about">
+        <div className="about m-10 md:w-1/3 mx-auto"
+             id="about">
             <h1 className="text-6xl font-bold text-center mt-10 text-white">
-                O mnie
+                Kim jestem?
             </h1>
-            <div className="flex w-1/2 mx-auto mt-5">
-            <Image
-                isZoomed
-                src="/justMe.jpg"
-                alt="Picture of the author"
-                width={240}
-                height={240}
-            />
-            <p className="text-center text-white font-light mr-5">
-                Cześć, jestem Szymon. Jestem JavaScript Developerem, który specjalizuje się w React.js oraz TypeScript. Moją pasją jest tworzenie nowych rzeczy, które pomagają ludziom. W wolnym czasie lubię jeździć na rowerze oraz biegać.
+            <div className="relative md:flex items-center justify-center mt-10 md:gap-10">
+            <p className="text-center text-white text-2xl font-medium  mx-auto">
+                Cześć, jestem <span className="text-white-accent">Szymon</span> Jestem JavaScript Developerem, który specjalizuje się w React.js oraz TypeScript. <span className="text-white-accent">Moją
+                pasją jest tworzenie nowych rzeczy</span>, dlatego zawsze staram się rozwijać i poszerzać swoją wiedzę. <span className="text-white-accent">Jestem osobą, która zawsze stara się pomóc innym</span> i
+                jestem przekonany, że <span className="text-white-accent">współpraca z Tobą będzie dla mnie ogromnym doświadczeniem</span>.
             </p>
             </div>
         </div>

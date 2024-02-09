@@ -18,7 +18,7 @@ const config: Config = {
       colors: {
         white: {
           "text": "#000000",
-          "background": "F3F5F7",
+          "background": "#F3F5F7",
           "primary": "#607CB0",
           "secondary": "#9ab0d9",
           "accent": "#7094d9",
