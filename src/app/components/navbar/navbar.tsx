@@ -16,6 +16,7 @@ export default function Hero() {
 
     const menuItems = [
         "Strona główna",
+        "O mnie",
         "Projekty",
         "Skontaktuj się",
     ];
@@ -42,6 +43,11 @@ export default function Hero() {
                 <NavbarItem isActive>
                     <Link color="foreground" href="#">
                         Strona główna
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" aria-current="page">
+                        O mnie
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
