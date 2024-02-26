@@ -16,10 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <>
             <Head>
-                <title>{metadata.title}</title>
+                <title>Szymon Bludnik - portfolio</title>
                 <link rel="icon" href="/justMe.jpg" />
-                <meta name="description" content={metadata.description} />
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                <meta name="description" content="Moje portfolio zawierające doświadczenie i projekty." />
+                <link rel="shortcut icon" href="/justMe.jpg" type="image/x-icon" />
                 {/* Add other meta tags as needed */}
             </Head>
             <html lang="pl" className='dark'>
