@@ -9,14 +9,26 @@ export const metadata: Metadata = {
     description: "Moje portfolio zawierające doświadczenie i projekty.",
 }
 
-export default function RootLayout({children}: { children: React.ReactNode }) {
+import Head from 'next/head';
+
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="pl" className='dark'>
-        <body className={asap.className}>
-        <Providers>
-            {children}
-        </Providers>
-        </body>
-        </html>
+        <>
+            <Head>
+                <title>{metadata.title}</title>
+                <link rel="icon" href="/justMe.jpg" />
+                <meta name="description" content={metadata.description} />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                {/* Add other meta tags as needed */}
+            </Head>
+            <html lang="pl" className='dark'>
+                <body className={asap.className}>
+                    <Providers>
+                        {children}
+                    </Providers>
+                </body>
+            </html>
+        </>
     );
 }
