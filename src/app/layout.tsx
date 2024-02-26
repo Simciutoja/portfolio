@@ -3,7 +3,7 @@ import "./globals.css";
 import {Providers} from "./providers";
 const asap = Asap({ subsets: ["latin"] });
 import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import type { Metadata } from "next"
 export const metadata: Metadata = {
     title: "Szymon Bludnik - Portfolio",
     description: "Moje portfolio zawierające doświadczenie i projekty.",
